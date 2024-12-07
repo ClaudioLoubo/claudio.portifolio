@@ -1,0 +1,276 @@
+/* geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", serif;
+
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.btn-contato {
+    
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #ad966e;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+h2.titulo{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #ad966e;
+}
+
+
+/*cabecalho*/
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #ffff;
+    transform: scale(1.08);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #ad966e;
+    transform: scale(1.05);
+}
+
+/* topo */
+
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.topo-do-site h1{
+    color: #ffff;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo-do-site  .text-topo-site h1 span{
+    color: #ad966e;
+    font-size: 50px;
+}
+
+.topo-do-site  .text-topo-site p{
+    font-size: 30px;
+    color: #fff;
+    margin: 40px 0px;
+}
+.img-topo{
+    img {
+        width: 600px;
+        }
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.topo-do-site .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* redes */
+
+section.redes{
+    padding: 40px 4%;
+    
+}
+
+.interface .flex h3{
+    align-items: center;
+}
+.redes .redes-box{
+    color: #fff;
+    padding: 40px;
+
+}
+.redes .interface .flex{
+    align-items: center;
+}
+.redes .flex button{
+    width: 150px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    border: 50px;
+    background-color: #ad966e;
+    font-size: 40px;
+    margin: 75px 75px;
+    cursor: pointer;
+}
+
+
+
+/* sobre */
+
+section .sobre{
+    padding: 40px 4%;
+}
+ section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+ }
+  .interface .flex .img-sobre{
+    img {
+        width: 600px;
+        }
+  }
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    color: #ad966e;
+}
+
+.sobre .txt-sobre p{
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+section.projetos{
+    padding: 100px 100px;
+    margin: 200px 0px;
+    background-image: url(imgs/fundo..jpg);
+}
+
+.projetos .interface .flex h4{
+    font-size: 50px;
+    align-items: center;
+    margin: 75px 75px;
+}
+.projetos .interface .flex button{
+    text-align: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 40px;
+    margin: 75px 75px;
+    cursor: pointer;
+    border: #ad966e;
+}
+
+/* form */
+
+section.formulario{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ad966e62;
+}
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario h2{
+    font-size: 50px;
+      padding: 20px;
+      color: #ad966e;
+      text-align: center;
+      
+}
+
+form input, textarea{
+    width: 100%;
+    background-color: #e6d7be60;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+form input::placeholder{
+    color:#ffffff73
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .enviar{
+    margin-top: 25px;
+    text-align: center;
+}
+
+form .enviar input{
+    width: 120px;
+    background-color: #ad966e;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* rodape */
+
+footer{
+    padding: 50px 4%;
+    box-shadow: 0 0 40px 10px #ad966e;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
